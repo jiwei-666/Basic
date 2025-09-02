@@ -1,0 +1,8 @@
+一、1、继承性：包含在内部的标签可以拥有外部标签的样式
+    如text-、 font- 、 list- 、 table- 、 border- 、 margin- 、 padding- 、 background- 、 color- 、 cursor- 、 font-size- 、 font-family- 、 font-style- 、 font-weight- 、 font-variant- 、 text-align- 、 text-decoration- 、 text-indent- 、 text-transform- 、 vertical-align- 、 white-space- 、 word-spacing- 、 letter-spacing- 、 line-height- 、
+    但是有些属性是不能继承：如border、padding、margin
+    2、优先级 ：内联样式 > id选择器 > 类选择器 > 标签选择器 > 继承样式 > 默认样式
+    3、层叠性: 相同属性的样式，后面的会覆盖前面的
+二、选择器
+1、全局选择器：*通配选择器
+2、

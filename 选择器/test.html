@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link  { /* 未访问的链接 */
+            color: red;
+        }
+        a:visited { /* 已访问的链接 */
+            color: green;
+        }
+        a:hover { /* 鼠标悬停的链接 */
+            color: blue;
+        }
+        a:active { /* 被点击的链接 */
+            color: yellow;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+        div:hover{
+            background-color: red;
+        }
+        button{
+            width: 100px;
+            height: 50px;
+            background-color: green;
+        }
+        button:hover{
+            background-color: red;
+        }
+        button:active{
+            background-color: yellow;
+        }
+        ul li:nth-child(odd){
+            background-color: green;
+        }
+        /* 将ul里面的第一个li颜色变成red */
+        ul li:first-child{
+            background-color: red;
+        }
+        /* 将ul里面的最后一个li颜色变成yellow */
+        ul li:last-child{
+            background-color: yellow;
+        }
+        ul li{
+            color: blue;
+        }
+        input:focus{
+            background-color: pink;
+        }
+        /* :only-child选择器 */
+        /* 选择器匹配属于父元素中唯一子元素的元素 */
+        /* :only-child 选择器匹配属于父元素中唯一子元素的元素 */
+        /* :not(selector) 选择器匹配每个元素是不是指定的元素/选择器 */
+        input:checked{
+            width: 100px;
+            width: 50px;
+        }
+        ul::before{
+            content: "我是ul的伪元素";
+            color: red;
+        }
+        ul::after{
+            content: "我是后面的内容";
+            color: red;
+        }
+        /* 在内容之前添加额外的内容选择器 */
+        h3::before{
+            content: "";
+            padding-left: 5px;
+            background-color: red;
+        }
+        /* 在内容之后添加额外的内容选择器 */
+        h3::after{
+            content: "";
+            padding-right: 5px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.baidu.com">百度一下</a>
+    <div></div>
+    <button>按钮test</button>
+    <ul>
+        <li>标签</li>
+        <li>标签</li>
+        <li>标签</li>
+        <li>标签</li>
+        <li>标签</li>
+    </ul>
+    <ul>
+        <li>
+            <ul>
+                1111
+            </ul>
+        </li>
+    </ul>
+    <input type="text">
+    <form action="">
+        <input type="checkbox">学习
+        <input type="checkbox">看书
+        <input type="checkbox">游戏
+    </form>
+    <h3>h3的前面</h3>
+</body>
+</html>
