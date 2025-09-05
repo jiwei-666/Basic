@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./mi.css">
+    <style>
+        /* 浮动会脱离文档流，相当于在页面上再放一层页面，在新的这层页面放内容
+        浮动元素默认横向摆放、如果横向摆放容器承载不开，会换行
+        */
+
+        .container{
+            width: 500px;
+            height: 200px;
+            border: 1px solid red;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            float: left;
+            margin: 5px;
+        }
+        ul li{
+            list-style: none;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    </div>
+    <ul>
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>列表3</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 500px;
+            /* height: 200px; */
+            border: 1px solid red;
+            overflow: hidden;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            float: left;
+            margin: 5px;
+        }
+        .nav{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 浮动产生的副作用
+    1、父元素高度塌陷
+    2、后续元素受到影响 --> 
+    <!-- 解决方案：
+    1、父元素高度塌陷：父元素设置高度
+    2、后续元素受到影响：给受到影响的元素添加`clear: both;`
+    3、父元素高度塌陷同时后续元素受到影响
+        1、overflow清楚浮动
+        2、伪对象方式 -->
+    <!-- 清除浮动：
+    1、父元素设置高度 高度塌陷、影响子元素
+    2、受影响的元素增加clear属性
+    3、overflow清楚浮动
+    4、伪对象方式 -->
+    <!-- 如果父级塌陷，并且子元素受到影响，可以使用overflow清除浮动 -->
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="nav"></div>
+</body>
+</html>

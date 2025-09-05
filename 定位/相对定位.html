@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 相对定位： 
+        left：向右移动
+        right：向左异动
+        top：向上异动
+        bottom：向下异动 */
+        /* 绝对定位：
+        left：距离左边的距离
+        right：距离右边的距离
+        top：距离上边的距离
+        bottom：距离下边的距离 */ */
+        /* 固定定位不会随着浏览器滚动而滚动 */
+        /* fixed相对文档定位 */
+        .container{
+            width: 500px;
+            height: 500px;
+            background-color: red;
+            position: fixed;
+            right: 100px;
+        }
+        p{
+            height: 500px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <p>文字1</p>
+    <p>文字2</p>
+    <p>文字3</p>
+    <p>文字3</p>
+    <p>文字1</p>
+    <p>文字1</p>
+</body>
+</html>
